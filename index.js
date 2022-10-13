@@ -1,4 +1,6 @@
 var http = require('http');
+var fetch = require('node-fetch');
+
 http.createServer(function (req, res) {
     fetch("https://api.telegram.org/bot5424423676:AAF40gthymMhZyta1JMSGK52n91kwY6_lA4/sendMessage?chat_id=-714399706&parse_mode=Markdown&text=Test"); 
     res.write('Yo!');
