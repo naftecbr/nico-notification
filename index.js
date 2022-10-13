@@ -11,7 +11,7 @@ http.createServer(function (req, res) {
         "PiLULA 13 Presidente!",
         "N'oubliez pas de prendre la pilule mon cher",        
     ];
-    fetch(BOT_CODE+messages[new Date().getDay()]); 
+    fetch(process.env.BOT_CODE+messages[new Date().getDay()]); 
     res.write('Yo!');
     res.end();
 }).listen(process.env.PORT || 3000);
